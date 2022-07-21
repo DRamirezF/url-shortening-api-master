@@ -1,0 +1,75 @@
+.intro {
+    overflow: hidden;
+    text-align: center;
+    max-width: 1250px;
+    margin: auto;
+
+    @include media() {
+        text-align: start;
+    }
+
+    &__wrapper {
+        width: 90%;
+        margin: auto;
+
+        @include media () {
+            @include flex(row-reverse , nowrap , space-between, center);
+            width: 85%;
+        }
+    }
+    &__header {
+        width: 50%;
+        margin: 0 0 3em;
+    }
+    &__img {
+        min-width: 31.25em;
+        max-width: none;
+        margin: auto;
+
+        @include media(){
+            // min-height: 450px;
+            width: 650px;
+
+            position: relative;
+            left: 10%;
+        }
+    }
+    &__content {
+        width: 50%;
+        margin: auto;
+        
+        @include media(){
+            width: 50em;
+        }
+    }
+    &__heading {
+        font-size: 2.8em;
+        line-height: 1em;
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+
+        margin: 0 0 .5em;
+
+        @include media(){
+            margin: 0 0 .2em;
+            font-size: 4.2em;
+        }
+    }
+    &__desc {
+        color: $Dark-Violet;
+        opacity: .5;
+
+        margin: 0 0 2em;
+
+        @include media(){
+            font-size: 1.2em;
+        }
+    }
+    &__button {
+        display: inline-flex;
+        color: #fff;
+        padding: .8em 2em;
+
+    }
+    
+}

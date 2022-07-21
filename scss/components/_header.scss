@@ -1,0 +1,105 @@
+.header {
+    font-size: 1.1em;
+    font-weight: 700;
+    max-width: 1250px;
+    margin: auto;
+
+    &__wrapper {
+        @include flex(row , wrap , space-between , center);
+        
+        width: 90%;
+        margin: 2em auto 1em;
+        
+        position: relative;
+        
+        @include media() {
+            @include flex(row , nowrap , flex-start , center);
+    
+            width: 85%;
+            font-size: .6em;
+            padding: 0 1em 0 0;
+
+        }
+    }
+    &__logo {
+        margin: 0 .5em 0 0;
+    }
+    &__hamburguer {
+        @include media() { display: none }
+    }
+    &__nav {
+        @include flex (column, nowrap, center, center);
+
+        width: 100%;
+        background-color: $Dark-Violet;
+        color: #fff;
+        text-align: center;
+        border-radius: .45em;
+
+        padding: 1.8em .5em;
+
+
+        position: absolute;
+        top: 150%;
+
+        transform: translateX(-110%);
+        opacity: 0;
+        
+        &-activo {
+            transition: all .3s;
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        @include media() {
+            transform: translateX(0);
+            opacity: 1;
+
+            @include flex (row , nowrap , space-between , center);
+
+            width: 85%;
+            background-color: #fff;
+
+            color: $Grayish-Violet;
+            font-size: 1em;
+            line-height: 0;
+
+            padding: 0;
+
+            position: static;
+        }
+    }
+    &__items {
+        @include media() {
+            @include flex (row, nowrap, center, center);
+        }
+    }
+    &__item {
+        padding: .8em;
+
+        @include media() {padding: 1em .8em;}
+    }
+    &__hr {
+        width: 90%;
+        height: 1px;
+        background-color: $Gray;
+        opacity: .2;
+
+        margin: 1.5em;
+
+        @include media() { display: none }
+    }
+    // Nombre por cambiar
+    &__items--account {
+        width: 90%;
+
+        @include media() {text-align: end; width: auto;}
+    }
+    // &__item--login {}
+    &__item--signUp {
+        @include media() { 
+            color: #fff;
+            padding: 1.5em 1.8em;
+        }
+    }
+}

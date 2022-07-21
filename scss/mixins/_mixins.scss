@@ -1,0 +1,17 @@
+@mixin flex ( $dir , $wrap , $just , $align) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+
+    @if $wrap == "nowrap" {
+        align-items: $align;
+    }@else {
+        align-content: $align;
+    }
+}
+
+@mixin media ( $media : 915px ) {
+    @media screen and (min-width: $media){
+        @content
+    }
+}
