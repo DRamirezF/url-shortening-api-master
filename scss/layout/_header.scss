@@ -77,7 +77,7 @@
     &__item {
         padding: .8em;
 
-        @include media() {padding: 1em .8em;}
+        @include media() {padding: 1em;}
     }
     &__hr {
         width: 90%;
@@ -95,7 +95,9 @@
 
         @include media() {text-align: end; width: auto;}
     }
-    // &__item--login {}
+    &__item--login {
+        @include media() {padding: 1em 2em 1em 0;}
+    }
     &__item--signUp {
         @include media() { 
             color: #fff;

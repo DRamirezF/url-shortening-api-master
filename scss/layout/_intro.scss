@@ -18,8 +18,9 @@
         }
     }
     &__header {
-        width: 50%;
         margin: 0 0 3em;
+
+        @include media(){width: 50%;}
     }
     &__img {
         min-width: 31.25em;
@@ -27,7 +28,6 @@
         margin: auto;
 
         @include media(){
-            // min-height: 450px;
             width: 650px;
 
             position: relative;
@@ -35,7 +35,6 @@
         }
     }
     &__content {
-        width: 50%;
         margin: auto;
         
         @include media(){

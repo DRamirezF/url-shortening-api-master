@@ -1,8 +1,7 @@
 @import "./variables/colors";
-@import "./variables/button";
-
+@import "./components/button";
 @import "./reset/reset";
 @import "./mixins/mixins";
 
-@import "./components/header";
-@import "./components/intro";
+@import "./layout/header";
+@import "./layout/intro";
