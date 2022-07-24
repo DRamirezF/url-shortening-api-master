@@ -1,0 +1,65 @@
+.short {
+    max-width: 1250px;
+    margin: auto;
+    background-color: $Gray;
+
+    &__wrapper {
+        width: 90%;
+        margin: auto;
+        @include media(){
+            width: 85%;
+        }
+    }
+    &__cards {
+        display: none;
+
+        padding: 0 0 .5em;
+
+        &-active {
+            display: block;
+        }
+    }
+    &__card {
+        background-color: #fff;
+        border-radius: .6em;
+        margin: 0 0 1.5em;
+
+        @include media() {
+            @include flex(row , nowrap , space-between , center);
+        }
+
+    }
+    &__cardHeader {
+        border-bottom: 1px solid $Gray;
+
+        padding: 1em;
+
+        @include media() {
+            border: none;
+        }
+    }
+    &__cardBody {
+        padding: 1em;
+
+        @include media() {
+            @include flex(row , nowrap , space-between , center);
+            gap: 1em;
+        }
+    }
+    &__shortURL {
+        color: $Cyan;
+    }
+    &__button {
+        text-align: center;
+        color: #fff;
+
+        padding: .6em 0;
+        margin: .8em 0 0;
+
+        @include media(){
+            border-radius: .3em;
+
+            padding: .6em 2em;
+        }
+    }
+}

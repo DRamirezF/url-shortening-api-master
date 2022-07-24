@@ -1,0 +1,98 @@
+.shortener {
+    max-width: 1250px;
+    margin: auto;
+    background-color: $Gray;
+
+
+    &__wrapper {
+        width: 90%;
+        margin: auto;
+
+        min-height: 100px;
+
+        position: relative;
+
+        @include media(){
+            width: 85%;
+        }
+    }
+    &__box {
+        width: 100%;
+        background-color: $Dark-Violet;
+        border-radius: .6em;
+
+        padding: 1.5em;
+
+        position: absolute;
+        bottom: 25%;
+
+
+        @include flex(column , nowrap, center, stretch);
+        gap: .6em;
+
+        @include media() {
+            @include flex(row , nowrap , center, stretch);
+            gap: .8em;
+
+            padding: 3em 2.8em;
+
+        }
+    }
+    &__inputBox {
+        &-activo {
+            margin: 0 0 1em;
+        }
+
+        @include media(){
+            width: 80%;
+        }
+    }
+    &__input {
+        width: 100%;
+        background-color: #fff;
+
+        border: 2.5px solid transparent;
+        border-radius: .3em;
+
+        padding: .5em;
+
+        &-activo {
+            border-color: $Red;
+        }
+    }
+    &__alert {
+        color: $Red;
+        font-style: italic;
+        font-size: .8em;
+
+        display: none;
+        opacity: 0;
+
+        position: absolute;
+        
+        &-activo {
+            display: block;
+            opacity: .9;
+        }
+        
+        @include media(){
+            font-size: .9em;
+            
+            &-activo {
+                top: 110%;
+            }
+        }
+    }
+    &__button {
+        text-align: center;
+        color: #fff;
+        padding: .6em 0;
+
+        @include media(){
+            width: 15%;
+        }
+    }
+    .btn {
+        border-radius: .3em;
+    }
+}

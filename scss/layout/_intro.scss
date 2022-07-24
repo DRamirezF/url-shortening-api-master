@@ -2,7 +2,7 @@
     overflow: hidden;
     text-align: center;
     max-width: 1250px;
-    margin: auto;
+    margin: 0 auto 6em;
 
     @include media() {
         text-align: start;
