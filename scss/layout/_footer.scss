@@ -1,0 +1,57 @@
+.footer {
+    background-color: $Very-Dark-Violet;
+
+    @include flex(column, nowrap, center, center);
+
+    text-align: center;
+    color: #fff;
+
+    padding: 3.5em 0 2.5em;
+
+    @include media(){
+        @include flex(row, nowrap, space-evenly, center);
+        gap: 2em;
+        padding: 0 0 2em;
+    }
+    
+    // &__imgBox {}
+    &__logo {
+        margin: 0 0 1em;
+    }
+    
+    &__lists {
+        @include media(){
+            @include flex(row, nowrap, center, flex-start);
+            gap: 4em;
+        }
+    }
+    &__list {
+        margin: 2em 0 0;
+    }
+    &__list-social {
+        @include flex(row, nowrap, center, center);
+        gap: 1em;
+
+    }
+    // &__item {}
+    &__link {
+        font-size: .9em;
+        opacity: .6;
+        letter-spacing: -1px;
+
+        margin: .3em 0;
+    }
+    &__link-tittle {
+        font-size: 1em;
+        font-weight: 700;
+        opacity: 1;
+        letter-spacing: 0;
+
+        margin: 1em 0;
+    }
+    &__link-social {
+        margin: 1em 0 0;
+        opacity: 1;
+    }
+    // &__icon {}
+}

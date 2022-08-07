@@ -1,0 +1,41 @@
+.cta {
+    background-color: $Dark-Violet;
+    min-height: 300px;
+
+    margin: auto;
+
+    text-align: center;
+
+    @include flex(column, nowrap, center, center);
+    @include media(){
+        min-height: 250px;
+    }
+
+    
+    &__tittle {
+        // background-color: green;
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 700;
+
+        letter-spacing: -1px;
+        margin: 0 0 .9em;
+
+        @include media(){
+            font-size: 2.3em;
+            letter-spacing: 0;
+
+        }
+
+    }
+    &__button {
+        background-color: $Cyan;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+
+        display: inline-flex;
+        padding: .8em 2em;
+        border-radius: 2em;
+    }
+}
