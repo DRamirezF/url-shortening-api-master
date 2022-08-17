@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,95 +84,114 @@
       </div>
     </section>
 
-    <section class="shortener">
-      <div class="shortener__wrapper">
-        <div class="shortener__box">
-          <div class="shortener__inputBox">
-            <input
-              type="text"
-              class="shortener__input"
-              placeholder="Shorten a link here..."
-              >
-            <span class="shortener__alert">Please add a link</span>
+    <div class="main__color">
+      <section class="shortener">
+        <div class="shortener__wrapper">
+          <picture class="shortener__picture">
+            <source
+              srcset="./images/bg-shorten-mobile.svg"
+              media="(max-width:915px)"
+              class="shortener__source">
+            <img
+              src="./images/bg-shorten-desktop.svg"
+              alt=""
+              class="shortener__img">
+          </picture>
+          <div class="shortener__box">
+            <div class="shortener__inputBox">
+              <input
+                type="text"
+                class="shortener__input"
+                placeholder="Shorten a link here..."
+                >
+              <span class="shortener__alert">Please add a link</span>
+            </div>
+            <a href="#" class="shortener__button btn btn--cyan">Shorten It!</a>
           </div>
-          <a href="#" class="shortener__button btn btn--cyan">Shorten It!</a>
         </div>
-      </div>
-    </section>
-    
-    <section class="short">
-      <div class="short__wrapper">
-        <div class="short__cards">
-          <article class="short__card">
-            <div class="short__cardHeader">https://www.youtube.com/watch?v=-aErzz-5zfI</div>
-            <div class="short__cardBody">
-              <span class="short__shortURL">https://www.youtube.com/</span>
-              <a href="" class="short__button btn btn--cyan">copy</a>
-            </div>
-          </article>
+      </section>
+      
+      <section class="short">
+        <div class="short__wrapper">
+          <div class="short__cards">
+            <article class="short__card">
+              <div class="short__cardHeader">https://www.youtube.com/watch?v=-aErzz-5zfI</div>
+              <div class="short__cardBody">
+                <span class="short__shortURL">https://www.youtube.com/</span>
+                <a href="" class="short__button btn btn--cyan">copy</a>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="feature__wrapper">
-        <div class="feature__header">
-          <h3 class="feature__heading">Advanced Statistics</h3>
-          <p class="feature__desc">Track how your links are performing across the web with our 
-            advanced statistics dashboard.</p>
+      </section>
+  
+      <section class="feature">
+        <div class="feature__wrapper">
+          <div class="feature__header">
+            <h3 class="feature__heading">Advanced Statistics</h3>
+            <p class="feature__desc">Track how your links are performing across the web with our 
+              advanced statistics dashboard.</p>
+          </div>
+          
+          <div class="feature__cards">
+            <article class="feature__card">
+              <div class="feature__cardHeader">
+                <img
+                  src="./images/icon-brand-recognition.svg"
+                  alt="Brand"
+                  class="feature__img">
+  
+              </div>
+              <div class="feature__cardBody">
+                <h4 class="feature__title">Brand Recognition</h4>
+                <p class="feature__text">Boost your brand recognition with each click. Generic links don’t 
+                  mean a thing. Branded links help instil confidence in your content.</p>
+              </div>
+            </article>
+            <article class="feature__card">
+              <div class="feature__cardHeader">
+                <img
+                  src="./images/icon-detailed-records.svg"
+                  alt="Brand"
+                  class="feature__img">
+  
+              </div>
+              <div class="feature__cardBody">
+                <h4 class="feature__title">Detailed Records</h4>
+                <p class="feature__text">Gain insights into who is clicking your links. Knowing when and where 
+                  people engage with your content helps inform better decisions.</p>
+              </div>
+            </article>
+            <article class="feature__card">
+              <div class="feature__cardHeader">
+                <img
+                  src="./images/icon-fully-customizable.svg"
+                  alt="Brand"
+                  class="feature__img">
+  
+              </div>
+              <div class="feature__cardBody">
+                <h4 class="feature__title">Fully Customizable</h4>
+                <p class="feature__text">Improve brand awareness and content discoverability through customizable 
+                  links, supercharging audience engagement.</p>
+              </div>
+            </article>
+          </div>
+  
         </div>
-        
-        <div class="feature__cards">
-          <article class="feature__card">
-            <div class="feature__cardHeader">
-              <img
-                src="./images/icon-brand-recognition.svg"
-                alt="Brand"
-                class="feature__img">
+      </section>
+    </div>
 
-            </div>
-            <div class="feature__cardBody">
-              <h4 class="feature__title">Brand Recognition</h4>
-              <p class="feature__text">Boost your brand recognition with each click. Generic links don’t 
-                mean a thing. Branded links help instil confidence in your content.</p>
-            </div>
-          </article>
-          <article class="feature__card">
-            <div class="feature__cardHeader">
-              <img
-                src="./images/icon-detailed-records.svg"
-                alt="Brand"
-                class="feature__img">
-
-            </div>
-            <div class="feature__cardBody">
-              <h4 class="feature__title">Detailed Records</h4>
-              <p class="feature__text">Gain insights into who is clicking your links. Knowing when and where 
-                people engage with your content helps inform better decisions.</p>
-            </div>
-          </article>
-          <article class="feature__card">
-            <div class="feature__cardHeader">
-              <img
-                src="./images/icon-fully-customizable.svg"
-                alt="Brand"
-                class="feature__img">
-
-            </div>
-            <div class="feature__cardBody">
-              <h4 class="feature__title">Fully Customizable</h4>
-              <p class="feature__text">Improve brand awareness and content discoverability through customizable 
-                links, supercharging audience engagement.</p>
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
 
     <section class="cta">
-        <h2 class="cta__tittle">Boost your links today</h2>
-        <a href="" class="cta__button">Get Started</a>
+        <div class="cta__imgBox">
+          <svg class="cta__svgMobile" xmlns="http://www.w3.org/2000/svg" width="375" height="300"><g fill="#4B3F6B" fill-rule="evenodd"><path d="M-263.351 570.909c29.685 77.331 73.689 123.988 171.79 127.377 98.102 3.39 167.085-60.547 256.043-73.22 88.958-12.674 135.24 107.895 240.73 152.532 105.488 44.638 274.775.333 377.9-125.622C886.24 526.021 878.62 327.29 799.392 238.798 720.162 150.307 608.257 84.743 243.5 224.76c-364.757 140.017-536.537 268.818-506.852 346.149zM-514-377.482c0 82.833 24.36 142.16 114.732 180.482 90.371 38.321 177.686 3.352 265.277 23.4 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 163.267-379.902C554.919-417.687 473.943-519 83.236-519S-514-460.314-514-377.482z"/></g></svg>
+          <svg class="cta__svgDesktop" xmlns="http://www.w3.org/2000/svg" width="1440" height="250"><g fill="#4B3F6B" fill-rule="evenodd"><path d="M830-63.482C830 19.351 854.36 78.678 944.732 117c90.371 38.321 177.686 3.352 265.277 23.4 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 163.267-379.902C1898.919-103.687 1817.943-205 1427.236-205S830-146.314 830-63.482zM-263.351 570.909c29.685 77.331 73.689 123.988 171.79 127.377 98.102 3.39 167.085-60.547 256.043-73.22 88.958-12.674 135.24 107.895 240.73 152.532 105.488 44.638 274.775.333 377.9-125.622C886.24 526.021 878.62 327.29 799.392 238.798 720.162 150.307 608.257 84.743 243.5 224.76c-364.757 140.017-536.537 268.818-506.852 346.149zM-514-377.482c0 82.833 24.36 142.16 114.732 180.482 90.371 38.321 177.686 3.352 265.277 23.4 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 163.267-379.902C554.919-417.687 473.943-519 83.236-519S-514-460.314-514-377.482z"/></g></svg>
+        </div>
+        <div class="cta__wrapper">
+          <h2 class="cta__tittle">Boost your links today</h2>
+          <a href="" class="cta__button">Get Started</a>
+        </div>
     </section>
 
   </main>

@@ -1,7 +1,6 @@
 .shortener {
     max-width: 1250px;
     margin: auto;
-    background-color: hsl(0, 0%, 75%, 0.3);
 
 
     &__wrapper {
@@ -16,7 +15,31 @@
             width: 85%;
         }
     }
+    &__picture {
+        width: auto;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 57.2%;
+        right: 0;
+
+        @include media(){
+            width: 100%;
+            bottom: 25%;
+        }
+    }
+    &__source {}
+    &__img {
+        // height: 10em;
+        border-radius: .6em;
+
+        @include media(){
+            height: 10em;
+        }
+    }
     &__box {
+        height: 160px;
+
         width: 100%;
         background-color: $Dark-Violet;
         border-radius: .6em;
@@ -39,6 +62,10 @@
         }
     }
     &__inputBox {
+        position: relative;
+        z-index: 2;
+
+        margin: .2em 0 0;
         &-activo {
             margin: 0 0 1em;
         }
@@ -54,7 +81,7 @@
         border: 2.5px solid transparent;
         border-radius: .3em;
 
-        padding: .5em;
+        padding: .8em;
 
         &-activo {
             border-color: $Red;
@@ -84,9 +111,12 @@
         }
     }
     &__button {
+        position: relative;
+        z-index: 2;
+
         text-align: center;
         color: #fff;
-        padding: .6em 0;
+        padding: 1.2em 0;
 
         @include media(){
             width: 15%;

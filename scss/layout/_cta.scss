@@ -6,14 +6,37 @@
 
     text-align: center;
 
+    position: relative;
+
     @include flex(column, nowrap, center, center);
     @include media(){
         min-height: 250px;
     }
 
-    
+    &__imgBox {
+        width: 100%;
+        position: absolute;
+    }
+    &__picture {
+        position: absolute;
+    }
+
+    &__svgMobile {
+        @include media(){
+            display: none;
+        }
+    }
+    &__svgDesktop {
+        display: none;
+        @include media(){
+            display: block;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+    }
     &__tittle {
-        // background-color: green;
         color: #fff;
         font-size: 1.8em;
         font-weight: 700;
