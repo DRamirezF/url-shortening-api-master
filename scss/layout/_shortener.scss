@@ -30,7 +30,6 @@
     }
     // &__source {}
     &__img {
-        // height: 10em;
         border-radius: .6em;
 
         @include media(){
@@ -116,10 +115,12 @@
 
         text-align: center;
         color: #fff;
-        padding: 1.2em 0;
+        padding: .8em 0;
 
         @include media(){
             width: 15%;
+            height: 90%;
+            padding: 1em;
         }
     }
     .btn {

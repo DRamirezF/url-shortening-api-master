@@ -7,7 +7,7 @@
     &__wrapper {
         @include flex(row , wrap , space-between , center);
         
-        width: 90%;
+        width: 85%;
         margin: 2em auto 1em;
         
         position: relative;
@@ -15,7 +15,6 @@
         @include media() {
             @include flex(row , nowrap , flex-start , center);
     
-            width: 85%;
             font-size: .6em;
             padding: 0 1em 0 0;
 
@@ -89,7 +88,6 @@
 
         @include media() { display: none }
     }
-    // Nombre por cambiar
     &__items--account {
         width: 90%;
 
@@ -101,7 +99,8 @@
     &__item--signUp {
         @include media() { 
             color: #fff;
-            padding: 1.5em 1.8em;
+            font-size: 1.2em;
+            padding: 1.4em 1.7em;
         }
     }
 }

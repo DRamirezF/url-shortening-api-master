@@ -113,17 +113,9 @@
         font-weight: 700;
         color: $Very-Dark-Violet;
         margin: 0 0 .9em;
-
-        @include media() {
-            // font-size: 1.4em;
-        }
     }
     &__text {
         font-size: 1.05em;
         color: $Grayish-Violet;
-
-        @include media() {
-            // font-size: .9em;
-        }
     }
 }
